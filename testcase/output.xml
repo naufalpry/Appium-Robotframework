@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.1 on darwin)" generated="20210914 23:23:12.881" rpa="false">
+<suite id="s1" name="Android2" source="/Users/naufalpry/Automation/Robot-Apps/testcase/android2.robot">
+<test id="s1-t1" name="Login">
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<arguments>
+<arg>${appium_host}</arg>
+<arg>platformName=${platform_name}</arg>
+<arg>deviceName=${deviceName}</arg>
+<arg>platformVersion=${platformVersion}</arg>
+<arg>appPackage=${apppackage}</arg>
+<arg>appActivity=${appactivity}</arg>
+</arguments>
+<status status="PASS" starttime="20210914 23:23:13.180" endtime="20210914 23:23:21.743"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>//android.view.ViewGroup[@content-desc="btnLogin"]</arg>
+<arg>10s</arg>
+</arguments>
+<status status="PASS" starttime="20210914 23:23:21.743" endtime="20210914 23:23:27.466"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//android.view.ViewGroup[@content-desc="btnLogin"]</arg>
+</arguments>
+<msg timestamp="20210914 23:23:27.469" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc="btnLogin"]'.</msg>
+<status status="PASS" starttime="20210914 23:23:27.466" endtime="20210914 23:23:27.834"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>//android.widget.EditText[@content-desc="fieldLogin"]</arg>
+<arg>10s</arg>
+</arguments>
+<status status="PASS" starttime="20210914 23:23:27.835" endtime="20210914 23:23:29.218"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.EditText[@content-desc="fieldLogin"]</arg>
+<arg>${Login}</arg>
+</arguments>
+<msg timestamp="20210914 23:23:29.220" level="INFO">Typing text 'pamanbaik@getnada.com' into text field '//android.widget.EditText[@content-desc="fieldLogin"]'</msg>
+<status status="PASS" starttime="20210914 23:23:29.218" endtime="20210914 23:23:29.337"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//android.view.ViewGroup[@content-desc="continueLogin"]</arg>
+</arguments>
+<msg timestamp="20210914 23:23:29.340" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc="continueLogin"]'.</msg>
+<status status="PASS" starttime="20210914 23:23:29.337" endtime="20210914 23:23:30.243"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>//android.widget.EditText[@content-desc="verifyPin1"]</arg>
+</arguments>
+<status status="PASS" starttime="20210914 23:23:30.244" endtime="20210914 23:23:32.868"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.EditText[@content-desc="verifyPin1"]</arg>
+<arg>0</arg>
+</arguments>
+<msg timestamp="20210914 23:23:32.870" level="INFO">Typing text '0' into text field '//android.widget.EditText[@content-desc="verifyPin1"]'</msg>
+<status status="PASS" starttime="20210914 23:23:32.869" endtime="20210914 23:23:33.005"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.EditText[@content-desc="verifyPin2"]</arg>
+<arg>0</arg>
+</arguments>
+<msg timestamp="20210914 23:23:33.009" level="INFO">Typing text '0' into text field '//android.widget.EditText[@content-desc="verifyPin2"]'</msg>
+<status status="PASS" starttime="20210914 23:23:33.006" endtime="20210914 23:23:33.680"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.EditText[@content-desc="verifyPin3"]</arg>
+<arg>0</arg>
+</arguments>
+<msg timestamp="20210914 23:23:33.685" level="INFO">Typing text '0' into text field '//android.widget.EditText[@content-desc="verifyPin3"]'</msg>
+<status status="PASS" starttime="20210914 23:23:33.680" endtime="20210914 23:23:34.289"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.EditText[@content-desc="verifyPin4"]</arg>
+<arg>0</arg>
+</arguments>
+<msg timestamp="20210914 23:23:34.292" level="INFO">Typing text '0' into text field '//android.widget.EditText[@content-desc="verifyPin4"]'</msg>
+<status status="PASS" starttime="20210914 23:23:34.290" endtime="20210914 23:23:34.864"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.EditText[@content-desc="verifyPin5"]</arg>
+<arg>0</arg>
+</arguments>
+<msg timestamp="20210914 23:23:34.866" level="INFO">Typing text '0' into text field '//android.widget.EditText[@content-desc="verifyPin5"]'</msg>
+<status status="PASS" starttime="20210914 23:23:34.865" endtime="20210914 23:23:35.417"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.EditText[@content-desc="verifyPin6"]</arg>
+<arg>0</arg>
+</arguments>
+<msg timestamp="20210914 23:23:35.419" level="INFO">Typing text '0' into text field '//android.widget.EditText[@content-desc="verifyPin6"]'</msg>
+<status status="PASS" starttime="20210914 23:23:35.418" endtime="20210914 23:23:35.990"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20210914 23:23:38.993" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210914 23:23:35.990" endtime="20210914 23:23:38.993"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20210914 23:23:39.629" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-1.png"&gt;&lt;img src="appium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210914 23:23:38.994" endtime="20210914 23:23:39.629"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup[1]</arg>
+<arg>15s</arg>
+</arguments>
+<status status="PASS" starttime="20210914 23:23:39.630" endtime="20210914 23:23:40.973"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup[1]</arg>
+</arguments>
+<msg timestamp="20210914 23:23:40.975" level="INFO">Clicking element 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup[1]'.</msg>
+<status status="PASS" starttime="20210914 23:23:40.973" endtime="20210914 23:23:41.023"></status>
+</kw>
+<doc>Test case robotframework with appium</doc>
+<status status="PASS" starttime="20210914 23:23:13.180" endtime="20210914 23:23:41.024" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Product">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>//android.view.ViewGroup[@content-desc="addProduct"]</arg>
+<arg>10s</arg>
+</arguments>
+<status status="PASS" starttime="20210914 23:23:41.025" endtime="20210914 23:23:42.232"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//android.view.ViewGroup[@content-desc="addProduct"]</arg>
+</arguments>
+<msg timestamp="20210914 23:23:42.234" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc="addProduct"]'.</msg>
+<status status="PASS" starttime="20210914 23:23:42.232" endtime="20210914 23:23:42.404"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>//android.widget.EditText[@content-desc="productName"]</arg>
+<arg>10s</arg>
+</arguments>
+<status status="PASS" starttime="20210914 23:23:42.405" endtime="20210914 23:23:44.472"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.EditText[@content-desc="productName"]</arg>
+<arg>es kelapa</arg>
+</arguments>
+<msg timestamp="20210914 23:23:44.474" level="INFO">Typing text 'es kelapa' into text field '//android.widget.EditText[@content-desc="productName"]'</msg>
+<status status="PASS" starttime="20210914 23:23:44.472" endtime="20210914 23:23:45.118"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.EditText[@text="Deskripsi Produk"]</arg>
+<arg>Kelapa muda</arg>
+</arguments>
+<msg timestamp="20210914 23:23:45.120" level="INFO">Typing text 'Kelapa muda' into text field '//android.widget.EditText[@text="Deskripsi Produk"]'</msg>
+<status status="PASS" starttime="20210914 23:23:45.118" endtime="20210914 23:23:46.139"></status>
+</kw>
+<kw name="Swipe" library="AppiumLibrary">
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<arguments>
+<arg>0</arg>
+<arg>1000</arg>
+<arg>0</arg>
+<arg>0</arg>
+</arguments>
+<status status="PASS" starttime="20210914 23:23:46.139" endtime="20210914 23:23:47.571"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>//android.widget.TextView[@text="Simpan Produk"]</arg>
+<arg>10s</arg>
+</arguments>
+<status status="PASS" starttime="20210914 23:23:47.571" endtime="20210914 23:23:48.008"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.EditText[@content-desc="productPrice"]</arg>
+<arg>10000</arg>
+</arguments>
+<msg timestamp="20210914 23:23:48.009" level="INFO">Typing text '10000' into text field '//android.widget.EditText[@content-desc="productPrice"]'</msg>
+<status status="PASS" starttime="20210914 23:23:48.008" endtime="20210914 23:23:48.126"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//android.view.ViewGroup[@content-desc="productCategory"]</arg>
+</arguments>
+<msg timestamp="20210914 23:23:48.128" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc="productCategory"]'.</msg>
+<status status="PASS" starttime="20210914 23:23:48.126" endtime="20210914 23:23:48.638"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>//android.widget.TextView[@text="Minuman"]</arg>
+<arg>10s</arg>
+</arguments>
+<status status="PASS" starttime="20210914 23:23:48.638" endtime="20210914 23:23:49.855"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//android.widget.TextView[@text="Minuman"]</arg>
+</arguments>
+<msg timestamp="20210914 23:23:49.858" level="INFO">Clicking element '//android.widget.TextView[@text="Minuman"]'.</msg>
+<status status="PASS" starttime="20210914 23:23:49.855" endtime="20210914 23:23:50.077"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//android.view.ViewGroup[@content-desc="setCategory"]</arg>
+</arguments>
+<msg timestamp="20210914 23:23:50.080" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc="setCategory"]'.</msg>
+<status status="PASS" starttime="20210914 23:23:50.078" endtime="20210914 23:23:50.461"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>//android.view.ViewGroup[@content-desc="btnSimpanProduk"]</arg>
+<arg>10s</arg>
+</arguments>
+<status status="PASS" starttime="20210914 23:23:50.462" endtime="20210914 23:23:51.192"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//android.view.ViewGroup[@content-desc="btnSimpanProduk"]</arg>
+</arguments>
+<msg timestamp="20210914 23:23:51.195" level="INFO">Clicking element '//android.view.ViewGroup[@content-desc="btnSimpanProduk"]'.</msg>
+<status status="PASS" starttime="20210914 23:23:51.192" endtime="20210914 23:23:51.827"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20210914 23:23:54.828" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210914 23:23:51.827" endtime="20210914 23:23:54.829"></status>
+</kw>
+<status status="PASS" starttime="20210914 23:23:41.024" endtime="20210914 23:23:54.830" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20210914 23:23:12.884" endtime="20210914 23:23:54.834"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0">Critical Tests</stat>
+<stat pass="2" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" id="s1" name="Android2">Android2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
