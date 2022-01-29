@@ -5,8 +5,6 @@ Library         HttpLibrary.HTTP
 Library         Collections
 | Variables | ../setting.py
 
-
-
 ***Keyword***
 MerchantId    
     ${json_string}=    catenate
@@ -53,16 +51,6 @@ MerchantId
         Should be True      ${result}==True
         Should Contain      ${message}       MerchantId not found
 
-
-
-                # :FOR  ${rcd}  IN  @{records}
-                # \   ${specialist}=                 Set Variable      ${rcd}[specialist]
-                # \   ${result}=         Evaluate        isinstance($specialist, (type(u''), str))
-                # \   Log     result = ${result}, expected str
-                # \   Should be True      ${result}==True
-
-
- 
 ***Test Cases***
 Yummy.Corp MerchantId
     MerchantId
