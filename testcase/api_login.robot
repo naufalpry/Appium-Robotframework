@@ -62,19 +62,6 @@ Login
     ${result_currencies_12_symbol}=     Set Variable    ${jsondata}[result][currencies][12][symbol]
     ${result_currencies_12_position}=     Set Variable    ${jsondata}[result][currencies][12][position]
     ${result_currencies_12_digits}=     Set Variable    ${jsondata}[result][currencies][12][digits]
-
-
-
-
-
-
-                # :FOR  ${rcd}  IN  @{records}
-                # \   ${specialist}=                 Set Variable      ${rcd}[specialist]
-                # \   ${result}=         Evaluate        isinstance($specialist, (type(u''), str))
-                # \   Log     result = ${result}, expected str
-                # \   Should be True      ${result}==True
-
-
  
 ***Test Cases***
 Yummy.Corp Login
